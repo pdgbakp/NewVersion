@@ -1,0 +1,123 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.container{
+    position: relative;
+    overflow: hidden;
+    width:100%;
+    height:100vh;
+    background-color: aqua;
+    border: 1px solid green;
+    animation-name: night;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.sun{
+    position: absolute;
+    animation-name: mysun;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes mysun {
+    0%{
+        margin-left:0px; 
+        opacity:50%;
+    }
+    100%{
+        margin-left:1250px;
+        opacity:100px;
+    }
+    
+    
+}
+@keyframes night {
+    from{
+        background-color: aqua;
+    }
+    to{
+        background-color: rgb(29, 28, 28);
+    }
+    
+}
+.cloud1{
+    position: absolute;
+    animation-name: cloud1;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+@keyframes cloud1 {
+    from{
+        margin-left:0px
+    }
+    to{
+        margin-left:1300px;
+    }
+    
+}
+.cloud2{
+    position: absolute;
+    
+    animation-name: cloud2;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+@keyframes cloud2 {
+    from{
+        margin-left:0px
+
+    }
+    to{
+        margin-left:1300px;
+    }
+    
+}
+.cloud3{
+    position: absolute;
+    
+    animation-name: cloud3;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+@keyframes cloud3 {
+    from{
+        margin-left:0px
+
+    }
+    to{
+        margin-left:1300px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
